@@ -18,20 +18,22 @@ If a probe result contains a high *lts* value (which documents the **Last time s
 Output
 ~~~~~~
 
-  {"dst_first_appeared": 1492560020, "serial": 2017041801, "serial_first_appeared": 1492560020, "dst": "198.41.0.4", "delta": 0}
-  {"dst_first_appeared": 1492577930, "serial": 2017041900, "serial_first_appeared": 1492577930, "dst": "198.41.0.4", "delta": 0}
-  {"dst_first_appeared": 1492592252, "serial": 2017041901, "serial_first_appeared": 1492592252, "dst": "198.41.0.4", "delta": 0}
+  {"dst_first_appeared": 1492560020, "serial": 2017041801, "serial_first_appeared": 1492560020, "dst": "198.41.0.4", "delta": 0 }
+
+  {"dst_first_appeared": 1492577930, "serial": 2017041900, "serial_first_appeared": 1492577930, "dst": "198.41.0.4", "delta": 0 }
+
+  {"dst_first_appeared": 1492592252, "serial": 2017041901, "serial_first_appeared": 1492592252, "dst": "198.41.0.4", "delta": 0 }
 
 This output then can be ingested in elasticsearch to show results.
 
 What do these fields mean
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  serial: The serial in question
-  dst_first_appeared: The time this serial appeared on this **dst**.
-  serial_first_appeared: The first time this serial appeared on any **dst**
-  dst: The thestination **server** that included the soa in the answer.
-  delta: The difference between first time the serial was ever seen and seen for this **dst**.
+* **serial**: The serial in question
+* **dst_first_appeared**: The time this serial appeared on this **dst**.
+* **serial_first_appeared**: The first time this serial appeared on any **dst**
+* **dst**: The thestination **server** that included the soa in the answer.
+* **delta**: The difference between first time the serial was ever seen and seen for this **dst**.
 
 
 
